@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>  
+  <head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Cobain</title> 
+  </head> 
+  <body class="bg-bg-color text-secondary-color h-screen m-0 p-0 text-base leading-6 font-family:sanss box-border">
+    <include src="./views/header.html"></include>
+    <section class="px-0 py-20" href="#members">
+        <h1 class="text-highlight-color text-center m-5 text-4xl">Members</h1>
+        <div class="flex flex-wrap justify-center items-center text-center gap-6">
+            <include src="components/card.html" locals='{
+                "title": "John Doe",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+                "url": "assets/images/chessmember1.jpg"
+            }'></include>
+            <include src="components/card.html" locals='{
+                "title": "Mad King",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+                "url": "assets/images/chessmember5.jpg"
+            }'></include>
+            <include src="components/card.html" locals='{
+                "title": "Queens Gambit",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+                "url": "assets/images/chessmember3.webp"
+            }'></include>
+            <include src="components/card.html" locals='{
+                "title": "Doe John",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+                "url": "assets/images/chessmember2.webp"
+            }'></include>
+            <include src="components/card.html" locals='{
+              "title": "Magnus",
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+              "url": "assets/images/chessmember4.webp"
+          }'></include>
+        </div>   
+    </section>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </body>
+</html>

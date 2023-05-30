@@ -7,7 +7,6 @@
  * Import variables
  */
 
-@import "variables";
 
 /**
  * Import npm dependencies
@@ -23,7 +22,18 @@
  * It's a best practice to use a different partial for each page
  */
 
-@import "layouts/home";
+ @tailwind base;
+ @tailwind components;
+ @tailwind utilities;
+
+ @layer components {
+    .main__card {
+      @apply mb-2 flex flex-col bg-primary-color gap-5 max-w-lg;
+    }
+    .link__nav {
+        @apply hover:text-primary-color no-underline;
+      }
+  }
 
 /**
  * Do NOT include anything else in this file!
